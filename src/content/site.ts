@@ -46,7 +46,7 @@ export const site = {
   about: [
     "I am a backend engineer based in Zagreb, working in software since 2018 and on Java since 2019.",
     "Most of my work has been Spring Boot services that exchange events over Kafka or JMS, store data in PostgreSQL and run on Kubernetes.",
-    "At Huddle that stack is reactive: Spring WebFlux with Redis, WebSockets and Snowflake alongside Kafka and PostgreSQL.",
+    "At Huddle that stack was reactive: Spring WebFlux with Redis, WebSockets and Snowflake alongside Kafka and PostgreSQL.",
     "I hold a master's degree in computer science from FESB and the PSM I certificate, and I speak Croatian, English and German.",
   ] as string[] | null,
   /** TODO(antun): "Open to work / freelance" badge. Hidden while null. */
@@ -87,7 +87,7 @@ export const site = {
       id: "bvgroup",
       role: "Software Engineer (contract)",
       company: "BVGroup",
-      location: "Zagreb",
+      location: "Remote",
       start: "2025-04",
       end: null,
       startLabel: "Apr 2025",
@@ -114,9 +114,9 @@ export const site = {
       company: "Huddle",
       location: "Zagreb",
       start: "2023-04",
-      end: null,
+      end: "2025-05",
       startLabel: "Apr 2023",
-      endLabel: "Present",
+      endLabel: "May 2025",
       tech: [
         "Java 17",
         "Spring Boot (Reactor/WebFlux)",
