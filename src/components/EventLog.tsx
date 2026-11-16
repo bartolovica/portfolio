@@ -58,11 +58,12 @@ export function EventLog({ events }: Props) {
               href={`#exp-${row.id}`}
               onClick={jump(row.id)}
               className="group -mx-2 flex items-baseline gap-3 rounded px-2 py-0.5 text-text transition-colors hover:bg-surface-2"
-              aria-label={`${row.offset} ${row.topic}: go to this position in Experience`}
             >
+              <span className="sr-only">Go to </span>
               <span className="shrink-0 text-muted">{row.offset}</span>
               <span className="truncate text-accent group-hover:underline">{row.topic}</span>
               <span className="hidden truncate text-muted sm:inline">{row.role}</span>
+              <span className="sr-only"> in Experience</span>
               {row.current && (
                 <span className="ml-auto flex shrink-0 items-center gap-2 text-signal">
                   <span className="sr-only">current</span>
