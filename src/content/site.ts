@@ -42,8 +42,13 @@ export const site = {
   languages: ["Croatian", "English", "German"],
   professionalSince: 2018,
   backendSince: "April 2019",
-  /** TODO(antun): 3–5 sentences. About section is hidden while null. */
-  about: null as string[] | null,
+  /** Draft from CV facts (docs/content-draft.md). Hidden while null. */
+  about: [
+    "I am a backend engineer based in Zagreb, working in software since 2018 and on Java since 2019.",
+    "Most of my work has been Spring Boot services that exchange events over Kafka or JMS, store data in PostgreSQL and run on Kubernetes.",
+    "At Huddle that stack is reactive: Spring WebFlux with Redis, WebSockets and Snowflake alongside Kafka and PostgreSQL.",
+    "I hold a master's degree in computer science from FESB and the PSM I certificate, and I speak Croatian, English and German.",
+  ] as string[] | null,
   /** TODO(antun): "Open to work / freelance" badge. Hidden while null. */
   availability: null as string | null,
   /** TODO(antun): public CV without phone number and date of birth. Hidden while null. */
@@ -99,7 +104,11 @@ export const site = {
         "JavaScript",
         "Snowflake",
       ],
-      summary: [],
+      summary: [
+        "Backend development of reactive Spring Boot (WebFlux) services on Java 17.",
+        "Event-driven integration over Kafka and real-time client updates over WebSockets, with PostgreSQL, Redis and Snowflake on the data side.",
+        "Services deployed to Kubernetes through GitLab CI/CD pipelines.",
+      ],
     },
     {
       id: "globallogic",
@@ -121,7 +130,10 @@ export const site = {
         "Git (Bitbucket)",
         "Elasticsearch",
       ],
-      summary: [],
+      summary: [
+        "Spring Boot services on Java 11 with JMS messaging, PostgreSQL and Elasticsearch.",
+        "Jenkins pipelines with SonarQube quality checks; code hosted on Bitbucket.",
+      ],
     },
     {
       id: "maurer",
@@ -145,7 +157,11 @@ export const site = {
         "Jira",
         "Confluence",
       ],
-      summary: [],
+      summary: [
+        "First Java backend role: Spring Boot services on Java 8 with Kafka and PostgreSQL.",
+        "Services packaged with Docker and deployed to Kubernetes with Helm charts on Linux.",
+        "Team workflow in Jira and Confluence.",
+      ],
     },
     {
       id: "adplastik",
@@ -157,7 +173,9 @@ export const site = {
       startLabel: "Sep 2018",
       endLabel: "Apr 2019",
       tech: ["Angular (2–4)", "C#", ".NET", "SQL Server"],
-      summary: [],
+      summary: [
+        "Full-stack development with an Angular (2–4) front end, a C#/.NET back end and SQL Server.",
+      ],
     },
     {
       id: "adplastik-junior",
@@ -169,7 +187,9 @@ export const site = {
       startLabel: "Jun 2017",
       endLabel: "Dec 2017",
       tech: ["Angular (2–4)"],
-      summary: [],
+      summary: [
+        "Part-time student role building Angular (2–4) front ends.",
+      ],
     },
   ] satisfies Experience[],
 
