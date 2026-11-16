@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Design tokens. Dark is the default theme; light overrides on html.light. */
+:root {
+  --bg: #0f1624;
+  --surface: #18223a;
+  --surface-2: #1f2b47;
+  --border: #2a3652;
+  --text: #e6eaf2;
+  --muted: #8e9bb3;
+  --accent: #7c8cff;
+  --accent-fg: #0f1624;
+  --signal: #f2b66d;
+  --ring: #a9b4ff;
+  color-scheme: dark;
+}
+
+.light {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #eef0f7;
+  --border: #d9dde8;
+  --text: #141a2a;
+  --muted: #5b6478;
+  --accent: #3e4bc4;
+  --accent-fg: #ffffff;
+  --signal: #9a5a00;
+  --ring: #3e4bc4;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-signal: var(--signal);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 35%, transparent);
+}
+
+/* One visible, consistent focus style for every interactive element. */
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Pulsing dot for the single "current" state; off under reduced motion. */
+@keyframes signal-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--signal) 55%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 8px transparent;
+  }
+}
+.signal-dot {
+  animation: signal-pulse 2.4s ease-out infinite;
+}
