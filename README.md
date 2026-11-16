@@ -18,23 +18,23 @@ npm run build    # static site in ./out
 
 ## Deploy (Netlify)
 
-`netlify.toml` already sets the build command (`npm run build`) and the publish directory (`out`).
+Live site: **https://antunbartolovic.netlify.app** (Netlify project `antunbartolovic`, team `bartolovica`).
+`netlify.toml` sets the build command (`npm run build`) and the publish directory (`out`).
 
-1. Push this repository to GitHub.
-2. In Netlify: **Add new site → Import an existing project → GitHub → portfolio**. Accept the detected settings.
-3. **Forms:** open the site's **Forms** page in Netlify and click **Enable form detection**, then trigger
-   one more deploy. Submissions of the `contact` form appear there; add an email notification under
-   *Forms → Notifications*.
-4. Optional: set the environment variable `NEXT_PUBLIC_SITE_URL` to the final URL (used for the
-   canonical link, Open Graph and the sitemap). Default: `https://antunbartolovic.netlify.app`.
-
-Or from the command line:
+Manual deploy from this folder (the site is already linked, see `.netlify/`):
 
 ```bash
-npx netlify-cli login
-npx netlify-cli init     # link to the GitHub repo, creates the site
 npx netlify-cli deploy --build --prod
 ```
+
+One-time steps left in the Netlify UI:
+
+1. **Continuous deploys from GitHub:** *Site configuration → Build & deploy → Continuous deployment →
+   Link repository → GitHub → bartolovica/portfolio*. After that every push to `main` deploys.
+2. **Forms:** *Forms → Enable form detection*, then trigger one more deploy. Submissions of the
+   `contact` form appear there; add an email notification under *Forms → Notifications*.
+3. Optional: set `NEXT_PUBLIC_SITE_URL` if the site moves to a custom domain (used for the canonical
+   link, Open Graph and the sitemap).
 
 ## Content TODOs (`TODO(antun)` in `site.ts`)
 
