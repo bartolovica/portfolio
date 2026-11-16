@@ -84,6 +84,31 @@ export const site = {
 
   experience: [
     {
+      id: "bvgroup",
+      role: "Software Engineer (contract)",
+      company: "BVGroup",
+      location: "Zagreb",
+      start: "2025-04",
+      end: null,
+      startLabel: "Apr 2025",
+      endLabel: "Present",
+      tech: [
+        "Java 25",
+        "Spring Boot 4",
+        "GraphQL",
+        "Angular",
+        "Testcontainers",
+        "GitLab CI/CD",
+        "Kubernetes",
+        "Argo Rollouts",
+      ],
+      summary: [
+        "Contract backend engineer on an online gaming platform.",
+        "Built wallet and transaction integrations with third-party game providers, and a promotions/awards service.",
+        "Develop a modular backoffice portal: Spring Boot 4 services with Angular front ends, migrated to Java 25.",
+      ],
+    },
+    {
       id: "huddle",
       role: "Software Engineer",
       company: "Huddle",
