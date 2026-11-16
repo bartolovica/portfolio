@@ -71,7 +71,7 @@ adresa iz CV-a. PDF za preuzimanje treba biti verzija bez telefona i datuma rođ
 
 | Period | Uloga | Tvrtka | Tehnologije |
 |---|---|---|---|
-| Apr 2023 – danas | Software Engineer | Huddle, Zagreb | Java 17, Spring Boot (Reactor/WebFlux), Kafka, PostgreSQL, Redis, GitLab CI/CD, Kubernetes, WebSockets, JavaScript, Snowflake |
+| Apr 2023 – May 2025 | Software Engineer | Huddle, Zagreb | Java 17, Spring Boot (Reactor/WebFlux), Kafka, PostgreSQL, Redis, GitLab CI/CD, Kubernetes, WebSockets, JavaScript, Snowflake |
 | Aug 2021 – Apr 2023 | Software Engineer | GlobalLogic Croatia, Zagreb | Java 11, Spring Boot, Maven, JMS, PostgreSQL, Jenkins, SonarQube, Git (Bitbucket), Elasticsearch |
 | Apr 2019 – Aug 2021 | Software Engineer | Maurer Electronics GmbH, Split | Java 8, Spring Boot, Maven, PostgreSQL, Linux, Kafka, Docker, Kubernetes, Helm, Jira, Confluence |
 | Sep 2018 – Apr 2019 | Software Engineer | AD Plastik Group, Solin | Angular (2–4), C#, .NET, SQL Server |

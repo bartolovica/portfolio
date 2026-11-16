@@ -291,12 +291,14 @@ export const site = {
     {
       group: "Backend",
       items: [
-        "Java 8–17",
+        "Java 8–25",
         "Spring Boot",
         "Spring WebFlux / Project Reactor",
         "REST",
+        "GraphQL",
         "WebSockets",
         "JMS",
+        "Testcontainers",
       ],
     },
     {
@@ -305,7 +307,20 @@ export const site = {
     },
     {
       group: "DevOps",
-      items: ["Docker", "Kubernetes", "Helm", "GitLab CI/CD", "Jenkins", "SonarQube", "Linux"],
+      items: [
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "Argo Rollouts",
+        "GitLab CI/CD",
+        "Jenkins",
+        "SonarQube",
+        "Linux",
+      ],
+    },
+    {
+      group: "AI",
+      items: ["AI-assisted development", "Claude Code"],
     },
     {
       group: "Other",
